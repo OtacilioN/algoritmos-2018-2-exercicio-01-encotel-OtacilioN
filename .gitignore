@@ -7,6 +7,9 @@
 *.obj
 *.elf
 
+# error files
+*.err
+
 # Linker output
 *.ilk
 *.map
