@@ -1,5 +1,3 @@
-
-
 #Usage:
 # * From linux prompt:
 #    - Normal C program (program.c)
