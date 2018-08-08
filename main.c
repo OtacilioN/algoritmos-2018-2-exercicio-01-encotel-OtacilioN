@@ -11,10 +11,11 @@ int main(void)
     {
         for (x = 0; x < MAX_CHARS; x++)
         {
-            if (input[x] > 'P')
-                input[x] = input[x] - 1 - (input[x] / 'X');
             if (input[x] >= 'A' && input[x] <= 'Z')
+            {
+                input[x] = input[x] - (input[x] / 'Q') - (input[x] / 'X');
                 printf("%d", ((input[x] - 'A') / ELEMENTS_PER_GROUP) + FIRST_NUMBER);
+            }
             else if (input[x] == '1' || input[x] == '0' || input[x] == '-')
                 printf("%c", input[x]);
             else
