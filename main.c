@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define MAX_CHARS 30
 #define FIRST_NUMBER 2
+#define ELEMENTS_PER_GROUP 3
 
 int main(void)
 {
@@ -13,7 +14,7 @@ int main(void)
             if (input[x] > 'P')
                 input[x] = input[x] - 1 - (input[x] / 'X');
             if (input[x] >= 'A' && input[x] <= 'Z')
-                printf("%d", ((input[x] - 'A') / 3) + FIRST_NUMBER);
+                printf("%d", ((input[x] - 'A') / ELEMENTS_PER_GROUP) + FIRST_NUMBER);
             else if (input[x] == '1' || input[x] == '0' || input[x] == '-')
                 printf("%c", input[x]);
             else
